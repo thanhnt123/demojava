@@ -1,4 +1,4 @@
-name: Java CI with Maven & Auto deploy API
+name: Java CI with Maven & Auto deploy API Account
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build & test source code with Maven
-      run: mvn -X -B package --file pom.xml
+      run: mvn -B package --file pom.xml
 
   push_to_dockerhub:
     name: Push Docker image to Docker Hub
@@ -35,7 +35,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: dockerhub368/demoprojectapi-1.0.3
+          images: dockerhub368/demoprojectaccount-1.0.3
       - name: Push Docker image to dockerhub
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
