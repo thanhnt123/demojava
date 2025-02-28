@@ -1,0 +1,11 @@
+/Users/thanhnt/Documents/project/springboot/demoproject_2/lib.thrift/src/main/java/com/demoproject/thriftclient/AccountClient.java
+/Users/thanhnt/Documents/project/springboot/demoproject_2/lib.thrift/src/main/java/com/demoproject/thrift/tcommon/ServiceStatus.java
+/Users/thanhnt/Documents/project/springboot/demoproject_2/lib.thrift/src/main/java/com/demoproject/thrift/tcommon/ServiceBases.java
+/Users/thanhnt/Documents/project/springboot/demoproject_2/lib.thrift/src/main/java/com/demoproject/thrift/account/TAccountListResult.java
+/Users/thanhnt/Documents/project/springboot/demoproject_2/lib.thrift/src/main/java/com/demoproject/thrift/account/EJobType.java
+/Users/thanhnt/Documents/project/springboot/demoproject_2/lib.thrift/src/main/java/com/demoproject/thrift/account/TAccount.java
+/Users/thanhnt/Documents/project/springboot/demoproject_2/lib.thrift/src/main/java/com/demoproject/thrift/account/EStatus.java
+/Users/thanhnt/Documents/project/springboot/demoproject_2/lib.thrift/src/main/java/com/demoproject/thrift/tcommon/EStatusResult.java
+/Users/thanhnt/Documents/project/springboot/demoproject_2/lib.thrift/src/main/java/com/demoproject/thrift/account/AccountService.java
+/Users/thanhnt/Documents/project/springboot/demoproject_2/lib.thrift/src/main/java/com/demoproject/thrift/tcommon/TResponseInfo.java
+/Users/thanhnt/Documents/project/springboot/demoproject_2/lib.thrift/src/main/java/com/demoproject/thrift/account/TAccountResult.java
