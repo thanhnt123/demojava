@@ -149,6 +149,8 @@ http://localhost:9000
 
 ## Gen code thrift entity
 
+Install thrift exp: libthrift:0.9.x
+
 ```bash
 https://thrift.apache.org/tutorial/java.html
 ```
