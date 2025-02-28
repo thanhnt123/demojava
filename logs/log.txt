@@ -1,0 +1,65 @@
+2025-02-25 18:16:53,670 [restartedMain] ERROR com.demoproject.AccountApplication (line 37) Thrift server start!
+2025-02-25 18:46:09,463 [restartedMain] ERROR com.demoproject.AccountApplication (line 37) Thrift server start!
+2025-02-25 18:46:25,129 [restartedMain] ERROR com.demoproject.framework.thrift.server.TServerHsHa (line 45) getServer error
+org.apache.thrift.transport.TTransportException: Could not create ServerSocket on address localhost/127.0.0.1:9001.
+	at org.apache.thrift.transport.TNonblockingServerSocket.<init>(TNonblockingServerSocket.java:96)
+	at org.apache.thrift.transport.TNonblockingServerSocket.<init>(TNonblockingServerSocket.java:79)
+	at org.apache.thrift.transport.TNonblockingServerSocket.<init>(TNonblockingServerSocket.java:75)
+	at com.demoproject.framework.thrift.server.TServerHsHa.getServer(TServerHsHa.java:30)
+	at com.demoproject.framework.thrift.server.TServerFactory.getServer(TServerFactory.java:43)
+	at com.demoproject.framework.thrift.server.TServerManager.add(TServerManager.java:19)
+	at com.demoproject.AccountApplication.main(AccountApplication.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2025-02-25 18:46:25,141 [restartedMain] ERROR com.demoproject.AccountApplication (line 37) Thrift server start!
+2025-02-25 18:46:25,142 [Thread-38] ERROR com.demoproject.framework.thrift.server.TServerManager (line 47) thrift server error
+java.lang.NullPointerException: Cannot invoke "org.apache.thrift.server.TServer.serve()" because "this.val$object.server" is null
+	at com.demoproject.framework.thrift.server.TServerManager$1.run(TServerManager.java:45)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-02-25 18:46:25,564 [restartedMain] ERROR com.demoproject.framework.thrift.server.TServerHsHa (line 45) getServer error
+org.apache.thrift.transport.TTransportException: Could not create ServerSocket on address localhost/127.0.0.1:9001.
+	at org.apache.thrift.transport.TNonblockingServerSocket.<init>(TNonblockingServerSocket.java:96)
+	at org.apache.thrift.transport.TNonblockingServerSocket.<init>(TNonblockingServerSocket.java:79)
+	at org.apache.thrift.transport.TNonblockingServerSocket.<init>(TNonblockingServerSocket.java:75)
+	at com.demoproject.framework.thrift.server.TServerHsHa.getServer(TServerHsHa.java:30)
+	at com.demoproject.framework.thrift.server.TServerFactory.getServer(TServerFactory.java:43)
+	at com.demoproject.framework.thrift.server.TServerManager.add(TServerManager.java:19)
+	at com.demoproject.AccountApplication.main(AccountApplication.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2025-02-25 18:46:25,572 [restartedMain] ERROR com.demoproject.AccountApplication (line 37) Thrift server start!
+2025-02-25 18:46:25,574 [Thread-42] ERROR com.demoproject.framework.thrift.server.TServerManager (line 47) thrift server error
+java.lang.NullPointerException: Cannot invoke "org.apache.thrift.server.TServer.serve()" because "this.val$object.server" is null
+	at com.demoproject.framework.thrift.server.TServerManager$1.run(TServerManager.java:45)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-02-25 18:47:38,835 [restartedMain] ERROR com.demoproject.AccountApplication (line 37) Thrift server start!
+2025-02-25 18:48:38,039 [restartedMain] ERROR com.demoproject.AccountApplication (line 37) Thrift server start!
+2025-02-25 18:48:51,782 [restartedMain] ERROR com.demoproject.framework.thrift.server.TServerHsHa (line 45) getServer error
+org.apache.thrift.transport.TTransportException: Could not create ServerSocket on address localhost/127.0.0.1:9001.
+	at org.apache.thrift.transport.TNonblockingServerSocket.<init>(TNonblockingServerSocket.java:96)
+	at org.apache.thrift.transport.TNonblockingServerSocket.<init>(TNonblockingServerSocket.java:79)
+	at org.apache.thrift.transport.TNonblockingServerSocket.<init>(TNonblockingServerSocket.java:75)
+	at com.demoproject.framework.thrift.server.TServerHsHa.getServer(TServerHsHa.java:30)
+	at com.demoproject.framework.thrift.server.TServerFactory.getServer(TServerFactory.java:43)
+	at com.demoproject.framework.thrift.server.TServerManager.add(TServerManager.java:19)
+	at com.demoproject.AccountApplication.main(AccountApplication.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2025-02-25 18:48:51,803 [restartedMain] ERROR com.demoproject.AccountApplication (line 37) Thrift server start!
+2025-02-25 18:48:51,803 [Thread-14] ERROR com.demoproject.framework.thrift.server.TServerManager (line 47) thrift server error
+java.lang.NullPointerException: Cannot invoke "org.apache.thrift.server.TServer.serve()" because "this.val$object.server" is null
+	at com.demoproject.framework.thrift.server.TServerManager$1.run(TServerManager.java:45)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-02-25 19:29:51,751 [main] ERROR com.demoproject.AccountApplication (line 28) Thrift server start!
+2025-02-27 23:11:13,788 [main] ERROR com.demoproject.AccountApplication (line 28) Thrift server start!
+2025-02-27 23:45:24,722 [main] ERROR com.demoproject.AccountApplication (line 28) Thrift server start!
+2025-02-28 00:22:43,131 [main] ERROR com.demoproject.AccountApplication (line 28) Thrift server start!

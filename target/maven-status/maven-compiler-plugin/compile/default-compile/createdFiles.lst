@@ -1,0 +1,7 @@
+com/demoproject/helper/ConfigInfo.class
+com/demoproject/thrift/AccountProcessor.class
+com/demoproject/AccountApplication.class
+com/demoproject/model/MessageEnt.class
+com/demoproject/controller/AccountBC.class
+com/demoproject/model/AccountEnt.class
+com/demoproject/model/ReportEnt.class
