@@ -147,6 +147,24 @@ http://localhost:9000
   }	
 ```
 
+## Gen code thrift entity
+
+```bash
+https://thrift.apache.org/tutorial/java.html
+```
+
+Go to the project lib thrift directory
+
+```bash
+  cd lib.thrift/resource
+```
+
+```bash
+  thrift --gen java account.thrift
+```
+
+Copy file gen to the project
+
 ## Acknowledgements
 
 - [Apache thrift](https://thrift.apache.org/)
