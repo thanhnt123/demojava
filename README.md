@@ -169,7 +169,8 @@ Copy file gen to the project
 
 ## Mysql database
 
-[Uploading sqCREATE TABLE `tb_account` (
+```bash
+CREATE TABLE `tb_account` (
   `id` int NOT NULL AUTO_INCREMENT,
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(100) DEFAULT NULL,
@@ -179,7 +180,8 @@ Copy file gen to the project
   `created_at` timestamp(6) NULL DEFAULT NULL,
   `updated_at` timestamp(6) NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_cil.txt…]()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_cil
+```
 
 
 ## Acknowledgements
