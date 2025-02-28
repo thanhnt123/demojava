@@ -1,4 +1,4 @@
-name: Java CI with Maven & Auto deploy Account service
+name: Java CI with Maven & Deploy Account service
 
 on:
   push:
