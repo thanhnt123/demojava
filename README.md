@@ -1,28 +1,43 @@
 # Demo java with microservice, docker, CI/CD
 Java 17, System Design, Architecture, Microservices, TDD (Test-Driven Development) &amp; DDD (Domain-Driven Design), AWS, Saga Pattern, Kafka CDC, Backend-for-Frontend (BFF), CI/CD...
 
+## Workflows CI/CD auto deploy using Github action & Dockerhub to cloud server AWS
 
 ![System-design](https://github.com/user-attachments/assets/d1920ef0-e239-4e09-8367-94eed203d753)
 
-## Environment secrets
+## Setup Environment secrets
 
 To run this project, you will need to add the following environment variables to Actions secrets and variables
 
 #### Setup environment variables connect to docker hub
 
+//password dockerhun
 `DOCKER_PASSWORD`
 
+//username dockerhub
 `DOCKER_USERNAME`
 
 #### Setup environment variables connect to cloud aws
 
+//host server aws
+
 `AWS_HOST`
+
+//port 22
 
 `AWS_PORT`
 
+//username
+
 `AWS_USERNAME`
 
+//SSH key get from server
+
 `SSH_KEY`
+
+## Documentation Dockerhub
+
+[Documentation](https://hub.docker.com/)
 
 ## Run Locally
 
@@ -72,12 +87,15 @@ Method POST
 
 ```bash
   http://54.169.162.172:9000/account/new
+```
 
-  Boby json
-	
+Boby json
+
+```bash
   {
     "id":0,
     "name":"test",
     "email": "test1@gmail.com"
   }	
 ```
+
