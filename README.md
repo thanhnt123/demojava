@@ -105,6 +105,18 @@ Start microservice
 
 ## API Reference
 
+URL server cloud aws
+
+```bash
+http://54.169.162.172:9000
+```
+
+URL localhost
+
+```bash
+http://localhost:9000
+```
+
 #### Method GET
 
 ```http
