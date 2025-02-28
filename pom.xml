@@ -107,11 +107,11 @@
             <groupId>commons-pool</groupId>
             <artifactId>commons-pool</artifactId>
         </dependency>
-        <!--<dependency>
+        <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>com.demoproject.framework</artifactId>
             <version>${project.version}</version>
-        </dependency>-->
+        </dependency>
     </dependencies>
     <build>
         <plugins>
