@@ -51,13 +51,14 @@ Create Branches from repo deploy-api
   git checkout deploy-api
 ```
 
-Push code to Branches or update code 
+Push code to Branches or push update code 
 
 ```bash
   git push --set-upstream origin deploy-api
 ```
 
-#### Auto deploy service account
+Github actions run
+
 
 ## Run Locally
 
