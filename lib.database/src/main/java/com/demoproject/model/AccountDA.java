@@ -22,7 +22,7 @@ public class AccountDA {
 
     private static final AccountDA instance = new AccountDA();
 
-    private static final String SQL_INSERT = "INSERT INTO %s(`id`, `username`, `password`, `displayname`,"
+    private static final String SQL_INSERT = "INSERT INTO %s(`username`, `password`, `displayname`,"
             + "`status`, `verifiedAt`, `created_at`, `updated_at`)"
             + "VALUES(?,?,?,?,NOW(),NOW(),NOW())";
 

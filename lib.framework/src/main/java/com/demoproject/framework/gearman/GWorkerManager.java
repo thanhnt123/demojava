@@ -14,7 +14,7 @@ public class GWorkerManager {
     private static final Logger logger;
     private static final int sleepIdle = 1000;
     private final List<WorkerRunner> lstWorker;
-    private String CONFIG_KEY = "asjgy201ss";
+    private String CONFIG_KEY = "demo_2025ss";
 
     public GWorkerManager() {
         this.lstWorker = new ArrayList<>();
@@ -25,7 +25,7 @@ public class GWorkerManager {
             return;
         }
         for (final String serviceName : args) {
-            this.CONFIG_KEY = ConvertUtil.toString(ConfigUtil.getString(serviceName, "configkey"), "asjgy201ss");
+            this.CONFIG_KEY = ConvertUtil.toString(ConfigUtil.getString(serviceName, "configkey"), "demo_2025ss");
             final String host = XXTEA.decryptBase64StringToString(ConvertUtil.toString(ConfigUtil.getString(serviceName, "host")), this.CONFIG_KEY);
             final int port = ConvertUtil.toInt(XXTEA.decryptBase64StringToString(ConfigUtil.getString(serviceName, "port"), this.CONFIG_KEY));
             final int workerNumber = ConvertUtil.toInt(ConfigUtil.getInteger(serviceName, "worker"));

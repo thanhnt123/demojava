@@ -1,0 +1,1 @@
+2025-02-28 12:22:33,006 [main] ERROR com.demoproject.AccountApplication (line 28) Thrift server start!

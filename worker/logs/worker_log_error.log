@@ -1,0 +1,8 @@
+ERROR [main] 2025-02-28 12:18:07,573 GWorkerManager.java (line 56) having exception when start service gearman_worker - java.lang.IllegalArgumentException: hostname can't be null
+ERROR [main] 2025-02-28 12:18:16,538 GWorkerManager.java (line 56) having exception when start service gearman_worker - java.lang.IllegalArgumentException: hostname can't be null
+ERROR [main] 2025-02-28 12:21:13,946 GWorkerManager.java (line 56) having exception when start service gearman_worker - java.lang.IllegalArgumentException: hostname can't be null
+ERROR [main] 2025-02-28 12:21:52,427 GWorkerManager.java (line 56) having exception when start service gearman_worker - java.lang.IllegalArgumentException: hostname can't be null
+ERROR [main] 2025-02-28 12:24:12,810 GWorkerManager.java (line 56) having exception when start service gearman_worker - java.lang.IllegalArgumentException: hostname can't be null
+ERROR [main] 2025-02-28 12:27:21,045 GWorkerManager.java (line 56) having exception when start service gearman_worker - java.lang.IllegalArgumentException: hostname can't be null
+ERROR [main] 2025-02-28 12:30:19,413 GWorkerManager.java (line 54) having exception when start service gearman_worker - java.lang.IllegalArgumentException: hostname can't be null
+ERROR [main] 2025-02-28 12:30:59,172 GWorkerManager.java (line 54) having exception when start service gearman_worker - java.lang.IllegalArgumentException: hostname can't be null
