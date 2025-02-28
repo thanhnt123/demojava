@@ -2,9 +2,9 @@ name: Java CI with Maven & Auto deploy API
 
 on:
   push:
-    branches: [ "deploy-api" ]
+    branches: [ "deploy-account" ]
   pull_request:
-    branches: [ "deploy-api" ]
+    branches: [ "deploy-account" ]
 jobs:
   build_code:
     runs-on: ubuntu-latest
