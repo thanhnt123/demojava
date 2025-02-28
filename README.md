@@ -59,6 +59,11 @@ Push code to Branches or push update code
 
 Github actions run
 
+<img width="1417" alt="Screen Shot 2025-02-28 at 9 07 14 AM" src="https://github.com/user-attachments/assets/7b68beea-6e1f-4da4-b3b0-d60dc6696db6" />
+
+<img width="1403" alt="Screen Shot 2025-02-28 at 9 07 35 AM" src="https://github.com/user-attachments/assets/abc58c92-3aba-4b7d-b5df-85cf96296d7f" />
+
+<img width="1396" alt="Screen Shot 2025-02-28 at 9 07 43 AM" src="https://github.com/user-attachments/assets/226cecfc-448d-4743-9cb0-af9eb89ce1ca" />
 
 ## Run Locally
 
