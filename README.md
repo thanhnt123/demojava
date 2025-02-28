@@ -120,7 +120,7 @@ http://localhost:9000
 #### Method GET
 
 ```http
-  GET http://54.169.162.172:9000/master/config
+  http://54.169.162.172:9000/master/config
 ```
 
 | Parameter | Type     | Description                |
@@ -130,7 +130,7 @@ http://localhost:9000
 #### Method POST
 
 ```http
-  POST http://54.169.162.172:9000/account/new
+  http://54.169.162.172:9000/account/new
 ```
 
 | Parameter | Type     | Description                |
