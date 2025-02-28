@@ -8,6 +8,7 @@ public class AccountServiceAdapter {
     private static final AccountClient accountClient = new AccountClient("thrift_account_service");
 
     public static boolean createAccount(TAccount tAccount) {
+        System.out.println("accountClient " + accountClient.ping());
         return accountClient.create(tAccount);
     }
 

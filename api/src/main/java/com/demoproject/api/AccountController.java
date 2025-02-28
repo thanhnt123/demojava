@@ -46,6 +46,7 @@ public class AccountController {
 
         boolean isCreateUser = AccountServiceAdapter.createAccount(accountItem);
 
+        System.out.println("isCreateUser " + isCreateUser);
         if (isCreateUser) {
             ReportEnt stat = new ReportEnt("Account " + account.getName() + " is created", new Date());
             stat.setStatus(false);

@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.demoproject</groupId>
     <artifactId>com.demoproject.account</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>com.demoproject.account</name>
     <description>Demo project for Spring Boot</description>
     <properties>
@@ -57,14 +57,14 @@
             <version>2.6.0</version>
         </dependency>
         <dependency>
-            <groupId>com.demoproject.demo</groupId>
-            <artifactId>com.demoproject.framework</artifactId>
-            <version>1.0.0</version>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>com.demoproject.thrift</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.demoproject.thrift</groupId>
-            <artifactId>thrift</artifactId>
-            <version>1.0.0</version>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>com.demoproject.framework</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
     <build>
