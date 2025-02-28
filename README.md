@@ -12,9 +12,11 @@ To run this project, you will need to add the following environment variables to
 #### Setup environment variables connect to docker hub
 
 //password dockerhun
+
 `DOCKER_PASSWORD`
 
 //username dockerhub
+
 `DOCKER_USERNAME`
 
 #### Setup environment variables connect to cloud aws
@@ -35,7 +37,7 @@ To run this project, you will need to add the following environment variables to
 
 `SSH_KEY`
 
-## Documentation Dockerhub
+Documentation Docker-hub
 
 [Documentation](https://hub.docker.com/)
 
@@ -75,21 +77,29 @@ Start microservice
   Run service report
 ```
 
-## Run Test
+## API Reference
 
-Method GET
+#### Method GET
 
-```bash
-  http://54.169.162.172:9000/master/config
+```http
+  GET http://54.169.162.172:9000/master/config
 ```
 
-Method POST
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `token` | `string` | **Required**. Your token key |
 
-```bash
-  http://54.169.162.172:9000/account/new
+#### Method POST
+
+```http
+  POST http://54.169.162.172:9000/account/new
 ```
 
-Boby json
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `body` | `json` | **Required**. Body data |
+
+#### json
 
 ```bash
   {
@@ -98,4 +108,13 @@ Boby json
     "email": "test1@gmail.com"
   }	
 ```
+
+## Acknowledgements
+
+- [Apache thrift](https://thrift.apache.org/)
+- [Gearmand](https://gearman.org/)
+- [Redis](https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/)
+- [Elasticsearch](https://www.elastic.co/elasticsearch)
+- [Docker](https://www.docker.com/)
+- [Github Actions](https://github.com/features/actions)
 
