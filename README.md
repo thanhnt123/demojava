@@ -11,11 +11,11 @@ To run this project, you will need to add the following environment variables to
 
 #### Setup environment variables connect to docker hub
 
-//password dockerhun
+//password docker-hub
 
 `DOCKER_PASSWORD`
 
-//username dockerhub
+//username docker-hub
 
 `DOCKER_USERNAME`
 
@@ -40,6 +40,24 @@ To run this project, you will need to add the following environment variables to
 Documentation Docker-hub
 
 [Documentation](https://hub.docker.com/)
+
+## Workflows CI/CD
+
+#### Auto deploy service api with Github Actions
+
+Create Branches from repo deploy-api 
+
+```bash
+  git checkout deploy-api
+```
+
+Push code to Branches or update code 
+
+```bash
+  git push --set-upstream origin deploy-api
+```
+
+#### Auto deploy service account
 
 ## Run Locally
 
