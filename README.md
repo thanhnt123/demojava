@@ -1,4 +1,4 @@
-# Demo java with microservice, docker, CI/CD
+[sql.txt](https://github.com/user-attachments/files/19021893/sql.txt)# Demo java with microservice, docker, CI/CD
 Java 17, System Design, Architecture, Microservices, TDD (Test-Driven Development) &amp; DDD (Domain-Driven Design), AWS, Saga Pattern, Kafka CDC, Backend-for-Frontend (BFF), CI/CD...
 
 ## Workflows CI/CD auto deploy using Github action & Dockerhub to cloud server AWS
@@ -166,6 +166,21 @@ Go to the project lib thrift directory
 ```
 
 Copy file gen to the project
+
+## Mysql database
+
+[Uploading sqCREATE TABLE `tb_account` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) DEFAULT NULL,
+  `password` varchar(100) DEFAULT NULL,
+  `displayname` varchar(200) DEFAULT NULL,
+  `status` varchar(45) DEFAULT NULL,
+  `verifiedAt` timestamp(6) NULL DEFAULT NULL,
+  `created_at` timestamp(6) NULL DEFAULT NULL,
+  `updated_at` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_cil.txt…]()
+
 
 ## Acknowledgements
 
