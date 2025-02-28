@@ -1,0 +1,61 @@
+name: Java CI with Maven & Auto deploy API
+
+on:
+  push:
+    branches: [ "deploy-api" ]
+  pull_request:
+    branches: [ "deploy-api" ]
+jobs:
+  build_code:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+    - name: Build & test source code with Maven
+      run: mvn -X -B package --file pom.xml
+
+  push_to_dockerhub:
+    name: Push Docker image to Docker Hub
+    needs: [build_code]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Log in to Docker Hub
+        uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
+        with:
+          images: dockerhub368/demoprojectapi-1.0.3
+      - name: Push Docker image to dockerhub
+        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+  
+  ssh_auto_update:
+      name: Connect ssh to server aws
+      needs: [push_to_dockerhub]
+      runs-on: ubuntu-latest
+      steps:
+      - name: SSH excute commands restart & update docker
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{ secrets.AWS_HOST }}
+          username: ${{ secrets.AWS_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.AWS_PORT }}
+          script: |
+            cd /home/service
+            ./console.sh
