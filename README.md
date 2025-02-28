@@ -119,7 +119,7 @@ http://localhost:9000
 
 #### Method GET
 
-```http
+```
   http://54.169.162.172:9000/master/config
 ```
 
@@ -129,7 +129,7 @@ http://localhost:9000
 
 #### Method POST
 
-```http
+```
   http://54.169.162.172:9000/account/new
 ```
 
