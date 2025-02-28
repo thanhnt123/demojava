@@ -40,7 +40,7 @@ Go to the project directory
 
 Install and start docker
 
-[Documentation](https://docs.docker.com/get-started/)install
+[Documentation](https://docs.docker.com/get-started/)
 
 Start docker compose start Kafka & Zookeepeer
 
@@ -58,4 +58,26 @@ Start microservice
   Run service notification
 
   Run service report
+```
+
+## Run Test
+
+Method GET
+
+```bash
+  http://54.169.162.172:9000/master/config
+```
+
+Method POST
+
+```bash
+  http://54.169.162.172:9000/account/new
+
+  Boby json
+	
+  {
+    "id":0,
+    "name":"test",
+    "email": "test1@gmail.com"
+  }	
 ```
